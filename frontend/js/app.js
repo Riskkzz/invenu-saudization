@@ -2,7 +2,7 @@
    Talks to the local FastAPI backend (/api/*), or — in the browser build — to the same engine via web/bridge.js. No external network calls. */
 "use strict";
 // رابط مستودع المشروع على GitHub (يظهر في الصفحة لمن يريد مراجعة الكود)
-const REPO_URL = "https://github.com/INVENU/saudization-tool";
+const REPO_URL = "https://github.com/Riskkzz/invenu-saudization";
 const $ = id => document.getElementById(id);
 const SEP = () => S.lang === "en" ? ", " : "، ";
 const ICON_INFO = `<svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 7.2v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="8" cy="4.9" r=".9" fill="currentColor"/></svg>`;

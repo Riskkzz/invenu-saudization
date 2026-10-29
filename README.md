@@ -5,7 +5,7 @@
 عربي / English، وضع نهاري / ليلي.
 
 ## ✅ الطريقة الأسهل: افتح الرابط
-**https://invenu.github.io/saudization-tool**
+**https://riskkzz.github.io/invenu-saudization**
 
 لا تنزيل ولا تثبيت. يعمل على أي جهاز ومتصفح حديث (Chrome، Safari، Edge)، حتى الجوال.
 أول زيارة تحمّل الأداة (نحو 24 م.ب، ثوانٍ معدودة)، وبعدها تفتح بسرعة.
