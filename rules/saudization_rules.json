@@ -1,0 +1,3159 @@
+{
+ "version": "2026-10-28.2",
+ "as_of": "2026-10-28",
+ "calculation": {
+  "rounding": "half_up",
+  "count_scope": "entity",
+  "below_min_wage_weight": 0.0,
+  "overlap_policy": "highest_ratio"
+ },
+ "establishment_categories": [
+  {
+   "id": "أ",
+   "min_workers": 50
+  },
+  {
+   "id": "ب",
+   "min_workers": 21
+  },
+  {
+   "id": "ج",
+   "min_workers": 0
+  }
+ ],
+ "penalties": {
+  "verified": true,
+  "note": "جدول المخالفات والعقوبات لنظام العمل، القرار الوزاري 112377 (21/08/1447هـ = 09/02/2026)، فئة (أ) المخالفات العامة: البند 29 (تشغيل غير سعودي في مهن مقصورة) والبند 30 (عدم الالتزام بنسب التوطين، يتعدد بعدد العمال غير السعوديين المتجاوزين النسبة).",
+  "per_category": {
+   "أ": {
+    "restricted": 10000,
+    "ratio": 6000
+   },
+   "ب": {
+    "restricted": 5000,
+    "ratio": 4000
+   },
+   "ج": {
+    "restricted": 3000,
+    "ratio": 2000
+   }
+  },
+  "repeat_multiplier": 1.0,
+  "source_url": "https://www.hrsd.gov.sa/sites/default/files/2026-02/qrar-wzary---112377.pdf"
+ },
+ "groups": [
+  {
+   "id": "admin_support",
+   "name": "المهن الإدارية المساندة",
+   "scope": "restricted",
+   "min_headcount": 1,
+   "phases": [
+    {
+     "effective_date": "2026-04-05",
+     "ratio": 1.0
+    }
+   ],
+   "min_wage": null,
+   "decision": "القرار الوزاري 132249 (05/04/2026)",
+   "verified": true,
+   "notes": "مقصورة على السعوديين 100%. 19 مهنة سارية من 05/04/2026 و50 مهنة من 04/10/2026. تُطبّق على كل منشأة لديها عامل واحد فأكثر.",
+   "source_title": "الدليل الإجرائي لقرار توطين المهن الإدارية المساندة",
+   "source_url": "https://www.hrsd.gov.sa/sites/default/files/2026-04/aldlyl-alajrayy-lqrar-twtyn-almhn-aladaryt-almsandt--2-.pdf",
+   "accreditation": "",
+   "activity_specific": false,
+   "enabled": true,
+   "name_en": "Administrative support professions",
+   "decision_en": "Ministerial decision 132249 (05/04/2026)"
+  },
+  {
+   "id": "customer_service",
+   "name": "خدمة العملاء",
+   "scope": "restricted",
+   "min_headcount": 1,
+   "phases": [
+    {
+     "effective_date": "2022-12-17",
+     "ratio": 1.0
+    }
+   ],
+   "min_wage": null,
+   "decision": "القرار الوزاري 208892",
+   "verified": true,
+   "notes": "يشمل كل من تتضمن مهامه خدمة العملاء بالعربية أو الإنجليزية ولو عبر التعهيد.",
+   "source_title": "الدليل الإجرائي لقرار توطين مهن خدمة العملاء",
+   "source_url": "https://www.hrsd.gov.sa/sites/default/files/2022-06/21112022.pdf",
+   "accreditation": "",
+   "activity_specific": false,
+   "enabled": true,
+   "name_en": "Customer service",
+   "decision_en": "Ministerial decision 208892"
+  },
+  {
+   "id": "marketing",
+   "name": "التسويق",
+   "scope": "group",
+   "min_headcount": 3,
+   "phases": [
+    {
+     "effective_date": "2026-04-19",
+     "ratio": 0.6
+    }
+   ],
+   "min_wage": {
+    "default": 5500
+   },
+   "decision": "القرار الوزاري 101319 (19/01/2026)",
+   "verified": true,
+   "notes": "",
+   "source_title": "الدليل الإجرائي لقرار توطين مهن التسويق",
+   "source_url": "https://www.hrsd.gov.sa/sites/default/files/2026-01/aldlyl-ala-jray-y-lqrar-twtyn-mhn-altswyq.pdf",
+   "accreditation": "",
+   "activity_specific": false,
+   "enabled": true,
+   "name_en": "Marketing",
+   "decision_en": "Ministerial decision 101319 (19/01/2026)"
+  },
+  {
+   "id": "sales",
+   "name": "المبيعات",
+   "scope": "group",
+   "min_headcount": 3,
+   "phases": [
+    {
+     "effective_date": "2026-04-19",
+     "ratio": 0.6
+    }
+   ],
+   "min_wage": null,
+   "decision": "القرار الوزاري 101278 (19/01/2026)",
+   "verified": true,
+   "notes": "لا يذكر الدليل حداً أدنى للأجر.",
+   "source_title": "الدليل الإجرائي لقرار توطين مهن المبيعات",
+   "source_url": "https://prod.hrsd.gov.sa/sites/default/files/2026-01/aldlyl-ala-jray-y-lqrar-twtyn-mhn-almby-at.pdf",
+   "accreditation": "",
+   "activity_specific": false,
+   "enabled": true,
+   "name_en": "Sales",
+   "decision_en": "Ministerial decision 101278 (19/01/2026)"
+  },
+  {
+   "id": "procurement",
+   "name": "المشتريات",
+   "scope": "group",
+   "min_headcount": 3,
+   "phases": [
+    {
+     "effective_date": "2026-05-31",
+     "ratio": 0.7
+    }
+   ],
+   "min_wage": null,
+   "decision": "القرار الوزاري 77050 (30/11/2025)",
+   "verified": true,
+   "notes": "",
+   "source_title": "الدليل الإجرائي لقرار توطين مهن المشتريات",
+   "source_url": "https://www.hrsd.gov.sa/sites/default/files/2026-01/aldlyl-alajrayy-lqrar-twtyn-mhn-almshtryat_5.pdf",
+   "accreditation": "",
+   "activity_specific": false,
+   "enabled": true,
+   "name_en": "Procurement",
+   "decision_en": "Ministerial decision 77050 (30/11/2025)"
+  },
+  {
+   "id": "project_management",
+   "name": "إدارة المشاريع",
+   "scope": "group",
+   "min_headcount": 3,
+   "phases": [
+    {
+     "effective_date": "2023-12-24",
+     "ratio": 0.4
+    },
+    {
+     "effective_date": "2027-02-14",
+     "ratio": 0.7
+    }
+   ],
+   "min_wage": {
+    "default": 6000
+   },
+   "decision": "القرار الوزاري 41454 (13/08/2026) — رفع النسبة إلى 70%",
+   "verified": true,
+   "notes": "مؤكد بالكامل من صاحب المشروع (2026-10-28): حد السريان 3، والنسبتان 40% ثم 70% من 2027-02-14، والحد الأدنى للأجر 6000 ريال.",
+   "source_title": "الدليل الإجرائي لقرار توطين مهن إدارة المشاريع",
+   "source_url": "https://www.hrsd.gov.sa/sites/default/files/2026-08/aldlyl-alajrayy-lqrar-almhn-adart-almshary--alnhayy-v.1.pdf",
+   "accreditation": "",
+   "activity_specific": false,
+   "enabled": true,
+   "name_en": "Project management",
+   "decision_en": "Ministerial decision 41454 (13/08/2026)"
+  },
+  {
+   "id": "accounting",
+   "name": "المهن المحاسبية",
+   "scope": "group",
+   "min_headcount": 5,
+   "phases": [
+    {
+     "effective_date": "2025-10-27",
+     "ratio": 0.4
+    },
+    {
+     "effective_date": "2026-10-27",
+     "ratio": 0.5
+    },
+    {
+     "effective_date": "2027-10-27",
+     "ratio": 0.6
+    },
+    {
+     "effective_date": "2028-10-27",
+     "ratio": 0.7
+    }
+   ],
+   "min_wage": {
+    "bachelor": 6000,
+    "diploma": 4500
+   },
+   "decision": "القرار الوزاري 103108 (26/01/2025)",
+   "verified": true,
+   "accreditation": "الهيئة السعودية للمراجعين والمحاسبين",
+   "notes": "",
+   "source_title": "الدليل الإجرائي لقرار توطين المهن المحاسبية",
+   "source_url": "https://www.hrsd.gov.sa/sites/default/files/2026-04/aldlyl-alajrayy-lqrar-twtyn-almhn-almhasbyt.pdf",
+   "activity_specific": false,
+   "enabled": true,
+   "name_en": "Accounting",
+   "decision_en": "Ministerial decision 103108 (26/01/2025)"
+  },
+  {
+   "id": "engineering",
+   "name": "المهن الهندسية (مهندسون)",
+   "scope": "group",
+   "min_headcount": 5,
+   "phases": [
+    {
+     "effective_date": "2026-06-30",
+     "ratio": 0.3
+    }
+   ],
+   "min_wage": {
+    "default": 8000
+   },
+   "decision": "القرار الوزاري 93483 (31/12/2025)",
+   "verified": true,
+   "accreditation": "الهيئة السعودية للمهندسين",
+   "notes": "",
+   "source_title": "الدليل الإجرائي لقرار توطين المهن الهندسية",
+   "source_url": "https://www.hrsd.gov.sa/sites/default/files/2026-01/aldlyl-alajrayy-lqrar-twtyn-almhn-alhndsyt_3.pdf",
+   "activity_specific": false,
+   "enabled": true,
+   "name_en": "Engineering (engineers)",
+   "decision_en": "Ministerial decision 93483 (31/12/2025)"
+  },
+  {
+   "id": "engineering_technical",
+   "name": "المهن الفنية الهندسية",
+   "scope": "group",
+   "min_headcount": 5,
+   "phases": [
+    {
+     "effective_date": "2025-07-27",
+     "ratio": 0.3
+    }
+   ],
+   "min_wage": {
+    "default": 5000
+   },
+   "decision": "القرار الوزاري 103105 (26/01/2025)",
+   "verified": true,
+   "notes": "",
+   "source_title": "الدليل الإجرائي لقرار توطين المهن الفنية الهندسية",
+   "source_url": "https://www.hrsd.gov.sa/sites/default/files/2026-01/aldlyl-alajrayy-lqrar-twtyn-mhn-alfnyt-alhndsyt.pdf",
+   "accreditation": "",
+   "activity_specific": false,
+   "enabled": true,
+   "name_en": "Engineering technicians",
+   "decision_en": "Ministerial decision 103105 (26/01/2025)"
+  },
+  {
+   "id": "ict",
+   "name": "الاتصالات وتقنية المعلومات",
+   "scope": "subgroup",
+   "min_headcount": 5,
+   "phases": [
+    {
+     "effective_date": "2021-06-27",
+     "ratio": 0.25
+    }
+   ],
+   "min_wage": {
+    "default": 7000
+   },
+   "decision": "القرار الوزاري 28889",
+   "verified": true,
+   "notes": "النسبة وحد السريان يُطبّقان على كل مجموعة فرعية منفصلة.",
+   "source_title": "الدليل الإجرائي لقرار توطين مهن الاتصالات وتقنية المعلومات",
+   "source_url": "https://www.hrsd.gov.sa/sites/default/files/2021-06/5102020.pdf",
+   "subgroups": {
+    "هندسة الاتصالات والتقنية": {
+     "min_wage": {
+      "default": 7000
+     },
+     "name_en": "ICT engineering"
+    },
+    "تطوير التطبيقات والبرمجة والتحليل": {
+     "min_wage": {
+      "default": 7000
+     },
+     "name_en": "Application development & analysis"
+    },
+    "الدعم الفني والإداري": {
+     "min_wage": {
+      "default": 5000
+     },
+     "name_en": "Technical & admin support"
+    }
+   },
+   "accreditation": "",
+   "activity_specific": false,
+   "enabled": true,
+   "name_en": "Information & communications technology",
+   "decision_en": "Ministerial decision 28889"
+  },
+  {
+   "id": "legal",
+   "name": "المهن القانونية",
+   "scope": "group",
+   "min_headcount": 1,
+   "phases": [
+    {
+     "effective_date": "2022-12-17",
+     "ratio": 0.7
+    }
+   ],
+   "min_wage": {
+    "default": 5500
+   },
+   "decision": "قرار توطين المهن القانونية",
+   "verified": true,
+   "notes": "مؤكد بالكامل من صاحب المشروع (2026-10-28): لا حد سريان (عامل واحد فأكثر)، والنسبة 70%، والحد الأدنى للأجر 5500 ريال.",
+   "source_title": "وزارة الموارد البشرية — قرارات توطين المهن القانونية والتخليص الجمركي",
+   "source_url": "https://www.hrsd.gov.sa/media-center/news/972498",
+   "accreditation": "",
+   "activity_specific": false,
+   "enabled": true,
+   "name_en": "Legal professions",
+   "decision_en": "Saudization decision"
+  },
+  {
+   "id": "ohs",
+   "name": "السلامة والصحة المهنية",
+   "scope": "group",
+   "min_headcount": 1,
+   "min_establishment_size": 50,
+   "phases": [
+    {
+     "effective_date": "2020-04-01",
+     "ratio": 0.7
+    }
+   ],
+   "min_wage": null,
+   "decision": "قرار توطين وظائف السلامة والصحة المهنية",
+   "verified": true,
+   "notes": "يطبق على المنشآت ذات 50 عاملاً فأكثر (min_establishment_size)، والنسبة من كادر السلامة.",
+   "source_title": "قرار توطين وظائف السلامة والصحة المهنية",
+   "source_url": "https://sosh.hrsd.gov.sa/ar/Resettlement-decision-for-occupational-health-and-safety-jobs",
+   "accreditation": "",
+   "activity_specific": false,
+   "enabled": true,
+   "name_en": "Occupational safety & health",
+   "decision_en": "Saudization decision"
+  },
+  {
+   "id": "customs",
+   "name": "التخليص الجمركي",
+   "scope": "group",
+   "min_headcount": 1,
+   "phases": [
+    {
+     "effective_date": "2021-12-30",
+     "ratio": 0.7
+    }
+   ],
+   "min_wage": {
+    "default": 5000
+   },
+   "activity_specific": true,
+   "decision": "القرار الوزاري 212497",
+   "verified": true,
+   "notes": "ينطبق على منشآت نشاط التخليص الجمركي فقط.",
+   "source_title": "الدليل الإجرائي لقرار توطين مهن التخليص الجمركي",
+   "source_url": "https://www.hrsd.gov.sa/sites/default/files/2021-07/03112023.pdf",
+   "accreditation": "",
+   "enabled": true,
+   "name_en": "Customs clearance",
+   "decision_en": "Ministerial decision 212497"
+  }
+ ],
+ "professions": [
+  {
+   "title": "مدير تسويق",
+   "code": "122103",
+   "group": "marketing",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير دعاية وإعلان",
+   "code": "122201",
+   "group": "marketing",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مصمم جرافيك",
+   "code": "216601",
+   "group": "marketing",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مصمم إعلان",
+   "code": "216604",
+   "group": "marketing",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي دعاية وإعلان",
+   "code": "243101",
+   "group": "marketing",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي تسويق",
+   "code": "243110",
+   "group": "marketing",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي علاقات عامة",
+   "code": "243202",
+   "group": "marketing",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير علاقات عامة",
+   "code": "122203",
+   "group": "marketing",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "وكيل دعاية وإعلان",
+   "code": "333901",
+   "group": "marketing",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مصور فوتوغرافي",
+   "code": "343101",
+   "group": "marketing",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مبيعات",
+   "code": "122104",
+   "group": "sales",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مبيعات تجزئة",
+   "code": "142001",
+   "group": "sales",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي تجاري",
+   "code": "243106",
+   "group": "sales",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي مبيعات",
+   "code": "243109",
+   "group": "sales",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مبيعات جملة",
+   "code": "142003",
+   "group": "sales",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي مبيعات أجهزة تقنية",
+   "code": "243401",
+   "group": "sales",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مندوب مبيعات",
+   "code": "332201",
+   "group": "sales",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "وسيط سلع مستقبلية",
+   "code": "332401",
+   "group": "sales",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "وسيط سلع",
+   "code": "332402",
+   "group": "sales",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مشتريات",
+   "code": "132417",
+   "group": "procurement",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي مناقصات",
+   "code": "243104",
+   "group": "procurement",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي مشتريات",
+   "code": "243102",
+   "group": "procurement",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مندوب مشتريات",
+   "code": "332302",
+   "group": "procurement",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير عقود",
+   "code": "122105",
+   "group": "procurement",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي توريد العلامات التجارية",
+   "code": "332301",
+   "group": "procurement",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير خدمات لوجستية",
+   "code": "132415",
+   "group": "procurement",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي تجارة إلكترونية",
+   "code": "243107",
+   "group": "procurement",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مستودع",
+   "code": "132418",
+   "group": "procurement",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي أبحاث أسواق",
+   "code": "243108",
+   "group": "procurement",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي مستودعات",
+   "code": "241110",
+   "group": "procurement",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أمين مستودع",
+   "code": "313907",
+   "group": "procurement",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير إدارة مشاريع",
+   "code": "121314",
+   "group": "project_management",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي إدارة مشاريع",
+   "code": "242108",
+   "group": "project_management",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مشاريع",
+   "code": "2133241",
+   "group": "project_management",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي مكتب إدارة المشاريع",
+   "code": "2133231",
+   "group": "project_management",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مشروع اتصالات",
+   "code": "1216031",
+   "group": "project_management",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مشروع لخدمات الأعمال",
+   "code": "1217011",
+   "group": "project_management",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مشروع نقل",
+   "code": "1216011",
+   "group": "project_management",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مالي",
+   "code": "121101",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير حسابات",
+   "code": "121102",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير حسابات تعريفة",
+   "code": "121103",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير خزينة",
+   "code": "121104",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير ميزانية",
+   "code": "121105",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مراجعة",
+   "code": "121106",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مراجعة داخلية",
+   "code": "121107",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير تحصيل",
+   "code": "121113",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير خزانة",
+   "code": "121116",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "محاسب",
+   "code": "241101",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "محاسب تكاليف",
+   "code": "241102",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مراجع داخلي",
+   "code": "241103",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "محاسب قانوني",
+   "code": "241105",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مراقب مالي",
+   "code": "241106",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي موازنة مالية",
+   "code": "241107",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي حسابات ضرائب",
+   "code": "241108",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي مراقبة مخزون",
+   "code": "241109",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "محاسب عام",
+   "code": "2622011",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "محاسب تكاليف",
+   "code": "2622021",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدقق حسابات",
+   "code": "2622031",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مراقب مالي (إدارة)",
+   "code": "2621031",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مراجع داخلي",
+   "code": "2621081",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مشرف مراجعة مالية",
+   "code": "2621141",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مراجع مالي أول",
+   "code": "2621151",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مساعد حسابات",
+   "code": "331301",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مراقب مخزون",
+   "code": "331302",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مسؤول ضرائب",
+   "code": "335202",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني حسابات عام",
+   "code": "3621012",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني تدقيق حسابات",
+   "code": "3621022",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني حسابات كلفة",
+   "code": "3621032",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب حسابات",
+   "code": "431101",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب تكاليف",
+   "code": "4211173",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب مالية",
+   "code": "4211183",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب مسك الدفاتر",
+   "code": "4121044",
+   "group": "accounting",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس مدني",
+   "code": "214201",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس مدني تقني",
+   "code": "214202",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس إنشائي",
+   "code": "214205",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس طرق",
+   "code": "214206",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس جسور",
+   "code": "214207",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس جيوتقني",
+   "code": "214204",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس كهربائي",
+   "code": "215101",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس كهربائي تقني",
+   "code": "215102",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس كهربائي تمديدات",
+   "code": "215108",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس كهروميكانيكي",
+   "code": "215104",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس توليد طاقة",
+   "code": "215106",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس نقل وتوزيع طاقة",
+   "code": "215107",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس أتمتة",
+   "code": "215105",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس نووي",
+   "code": "214915",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس ميكانيكي",
+   "code": "214401",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس ميكانيكي تقني",
+   "code": "214402",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس ميكانيكي آليات ثقيلة",
+   "code": "214409",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس ميكانيكي لحام",
+   "code": "214407",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس مركبات",
+   "code": "214410",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس تيربينات",
+   "code": "214411",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس ميكاترونكس",
+   "code": "214412",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس ميكانيكي قطارات",
+   "code": "214408",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس صناعي",
+   "code": "214101",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس إنتاج تقني",
+   "code": "214103",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس إنتاج",
+   "code": "214102",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس كيميائي",
+   "code": "214501",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس كيميائي تقني",
+   "code": "214502",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس تحلية مياه",
+   "code": "214504",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس معالجة مياه",
+   "code": "214302",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس صحي",
+   "code": "214303",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس بيئي",
+   "code": "214301",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس نفط وغاز",
+   "code": "214603",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس تعدين",
+   "code": "214601",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس معادن",
+   "code": "214602",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس مواد",
+   "code": "214904",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس معماري",
+   "code": "216101",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس معماري داخلي",
+   "code": "216102",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس تصميم مواقع",
+   "code": "216201",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس إلكترونيات",
+   "code": "215201",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس طيران",
+   "code": "214404",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس بحري",
+   "code": "214405",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس تدفئة وتهوية وتكييف",
+   "code": "214406",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس تكاليف",
+   "code": "214902",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس متفجرات",
+   "code": "214903",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس ضبط وتحكم في الجودة",
+   "code": "214906",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس بحث وتطوير",
+   "code": "214908",
+   "group": "engineering",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "معماري",
+   "code": "3211012",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "صانع نماذج معمارية (ماكيت)",
+   "code": "3211022",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "رسام إنشائي أبنية",
+   "code": "3212012",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "رسام إنشائي طرق",
+   "code": "3212022",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني طرق (مراقب طرق)",
+   "code": "3212042",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مساح أبنية",
+   "code": "3212052",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مساح طرق",
+   "code": "3212062",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مساح أراضي",
+   "code": "3212072",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مساح - عام",
+   "code": "3212132",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مساح تصويري",
+   "code": "3212152",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مساح كميات",
+   "code": "3212242",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "رسام هندسة مدنية",
+   "code": "3212122",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "رسام خرائط ومخططات",
+   "code": "3212162",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "معاون مساح",
+   "code": "3212172",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني رسم خرائط رقمية",
+   "code": "3212182",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني رسم خرائط بحرية",
+   "code": "3212232",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "رسام كهربائي",
+   "code": "3213012",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "رسام ميكانيكي",
+   "code": "3213022",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "رسام تصاميم كهربائية",
+   "code": "3213032",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني محطات توليد تشغيل وصيانة",
+   "code": "3213052",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني كهرباء خطوط هوائية",
+   "code": "3213082",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني كهرباء كبلات أرضية",
+   "code": "3213092",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني كهربائي خدمات مشتركين",
+   "code": "3213102",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني كهرباء تمديدات",
+   "code": "3213112",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني كهربائي صيانة آلات",
+   "code": "3213122",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني كهربائي أجهزة دقيقة",
+   "code": "3213132",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني في الهندسة الكهربائية - عام",
+   "code": "3213142",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني إلكترونيات",
+   "code": "3213152",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني كهربائي مولدات وموترات الطائرات",
+   "code": "3213192",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "رسام ميكانيكي عام",
+   "code": "3215012",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "رسام ميكانيك تمديدات صحية وتدفئة",
+   "code": "3215022",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "رسام ميكانيكي تكييف وتبريد",
+   "code": "3215032",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني في الهندسة الميكانيكية - عام",
+   "code": "3215052",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني ميكانيكي إنتاج",
+   "code": "3215062",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني لحام",
+   "code": "3215072",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فاحص لحام",
+   "code": "3215083",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني قوالب",
+   "code": "3215102",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني تمديدات صحية وتدفئة - تركيب",
+   "code": "3215122",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني تمديدات صحية وتدفئة - تشغيل",
+   "code": "3215132",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني تكييف وتبريد - تركيب",
+   "code": "3215142",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني تكييف وتبريد - تشغيل وصيانة",
+   "code": "3215152",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني الهندسة الميكانيكية والمحركات البخارية",
+   "code": "3215162",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة مركبات خفيفة",
+   "code": "3215172",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة حافلات وشاحنات",
+   "code": "3215182",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة آلات طرق",
+   "code": "3215192",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة آلات زراعية",
+   "code": "3215202",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني خراطة محركات",
+   "code": "3215212",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة طائرات مروحية",
+   "code": "3215222",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني في هندسة الطيران",
+   "code": "3215232",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة طائرات نفاثة",
+   "code": "3215242",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة محركات سفن",
+   "code": "3215252",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة قاطرات",
+   "code": "3215262",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني موائع (هيدروليك)",
+   "code": "3215272",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني ميكانيك صيانة عامة",
+   "code": "3215312",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني هندسة إنتاج",
+   "code": "3215322",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني كيميائي تكرير نفط",
+   "code": "3216022",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صناعة منظفات كيميائية",
+   "code": "3216032",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صناعات دهان",
+   "code": "3216052",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني حفر",
+   "code": "3217042",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "رسام تخطيط مصانع",
+   "code": "3218012",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني تركيب معدات صناعية",
+   "code": "3218022",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني مكافحة الحرائق",
+   "code": "3218052",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني مياه شبكات",
+   "code": "3219012",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني هندسة مدنية",
+   "code": "311201",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني مواد إنشائية",
+   "code": "311203",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني إنشاءات",
+   "code": "311204",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة إنشاءات",
+   "code": "311205",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة مباني",
+   "code": "311207",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة طرق",
+   "code": "311210",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني هندسة كهربائية",
+   "code": "311301",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني كهربائي شبكات توزيع هوائية",
+   "code": "311302",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني كهربائي شبكات توزيع أرضية",
+   "code": "311303",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني كهربائي تمديدات كهربائية",
+   "code": "311304",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة آلات كهربائية",
+   "code": "311305",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة أجهزة كهربائية",
+   "code": "311306",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة شبكات كهربائية",
+   "code": "311307",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني كهروميكانيك",
+   "code": "311308",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني كهربائي أنظمة حماية كهربائية",
+   "code": "311309",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني أجهزة إلكترونية",
+   "code": "311403",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة أجهزة إلكترونية",
+   "code": "311404",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني أجهزة دقيقة",
+   "code": "311405",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني هندسة إلكترونية",
+   "code": "311409",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني هندسة ميكانيكية",
+   "code": "311501",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني تدفئة وتهوية وتكييف",
+   "code": "311502",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني ميكانيكي هياكل",
+   "code": "311505",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني ميكانيكي محركات",
+   "code": "311506",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني ميكانيكي مركبات",
+   "code": "311507",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني ميكانيكي معدات ثقيلة",
+   "code": "311508",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صندوق هواء",
+   "code": "311509",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني ميكانيكي تمديدات صحية وتدفئة وغاز",
+   "code": "311510",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني صيانة ميكانيكية",
+   "code": "311511",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني هندسة كيميائية",
+   "code": "311601",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "فني مصانع كيميائية",
+   "code": "311602",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مشرف تصنيع",
+   "code": "312201",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مشرف صيانة",
+   "code": "312203",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مشرف إنشاء مباني",
+   "code": "312301",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مشرف إنشاء طرق",
+   "code": "312302",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مشرف موقع إنشائي",
+   "code": "312303",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مشرف صيانة إنشاءات",
+   "code": "312304",
+   "group": "engineering_technical",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس حاسب آلي",
+   "code": "2214061",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "هندسة الاتصالات والتقنية",
+   "aliases": []
+  },
+  {
+   "title": "مهندس اتصالات",
+   "code": "2214041",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "هندسة الاتصالات والتقنية",
+   "aliases": []
+  },
+  {
+   "title": "مهندس شبكات",
+   "code": "2133161",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "هندسة الاتصالات والتقنية",
+   "aliases": []
+  },
+  {
+   "title": "مهندس شبكات الأقمار الصناعية",
+   "code": "2214101",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "هندسة الاتصالات والتقنية",
+   "aliases": []
+  },
+  {
+   "title": "مهندس إذاعة وتلفزة",
+   "code": "2214021",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "هندسة الاتصالات والتقنية",
+   "aliases": []
+  },
+  {
+   "title": "مهندس بث وإرسال",
+   "code": "2214031",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "هندسة الاتصالات والتقنية",
+   "aliases": []
+  },
+  {
+   "title": "مهندس راديو ورادار طائرات",
+   "code": "2214081",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "هندسة الاتصالات والتقنية",
+   "aliases": []
+  },
+  {
+   "title": "أخصائي تطوير البرمجيات",
+   "code": "2133251",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "تطوير التطبيقات والبرمجة والتحليل",
+   "aliases": []
+  },
+  {
+   "title": "أخصائي هندسة البرمجيات",
+   "code": "2133311",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "تطوير التطبيقات والبرمجة والتحليل",
+   "aliases": []
+  },
+  {
+   "title": "أخصائي تحليل الأعمال",
+   "code": "2133111",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "تطوير التطبيقات والبرمجة والتحليل",
+   "aliases": []
+  },
+  {
+   "title": "اختصاصي توثيق البرامج والنظم",
+   "code": "2133081",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "تطوير التطبيقات والبرمجة والتحليل",
+   "aliases": []
+  },
+  {
+   "title": "مبرمج حاسب آلي",
+   "code": "2133031",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "تطوير التطبيقات والبرمجة والتحليل",
+   "aliases": []
+  },
+  {
+   "title": "مبرمج نظم بنك معلومات",
+   "code": "2133051",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "تطوير التطبيقات والبرمجة والتحليل",
+   "aliases": []
+  },
+  {
+   "title": "محلل نظم عام",
+   "code": "2133011",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "تطوير التطبيقات والبرمجة والتحليل",
+   "aliases": []
+  },
+  {
+   "title": "أخصائي مكتب الدعم الفني",
+   "code": "2133191",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "أخصائي دعم فني",
+   "code": "2133211",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "أخصائي تشغيل الأنظمة",
+   "code": "2133141",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "أخصائي خدمات تقنية",
+   "code": "2133201",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "فني حاسب آلي",
+   "code": "3214072",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "فني مكتب الدعم الفني",
+   "code": "3132042",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "فني دعم",
+   "code": "3132052",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "مشغل حاسب آلي",
+   "code": "4234013",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "مشغل حاسب إلكتروني",
+   "code": "3132012",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "إلكتروني صيانة حاسبات",
+   "code": "9224033",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "إداري إنترنت",
+   "code": "2133281",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "فني إلكتروني اتصالات",
+   "code": "3214042",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "فني شبكات حاسب",
+   "code": "3132032",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "إداري شبكات",
+   "code": "2133171",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "فني اتصالات سلكية ولاسلكية",
+   "code": "3213162",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "فني هندسة اتصالات",
+   "code": "3214092",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "فني تليفونات",
+   "code": "3214112",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "فني هاتف سيار",
+   "code": "3214102",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "فني إلكتروني إرسال إذاعي",
+   "code": "3214022",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "إلكتروني صيانة هاتف",
+   "code": "9222055",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "إلكتروني صيانة أجهزة اتصال",
+   "code": "9222035",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "مشغل اتصالات راديو بمحطة أرضية",
+   "code": "4133133",
+   "group": "ict",
+   "effective_date": null,
+   "subgroup": "الدعم الفني والإداري",
+   "aliases": []
+  },
+  {
+   "title": "مستشار قانوني نظم عامة",
+   "code": "2432011",
+   "group": "legal",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مستشار قانوني نظم خاصة",
+   "code": "2432021",
+   "group": "legal",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي عقود",
+   "code": "241318",
+   "group": "legal",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب شؤون قانونية",
+   "code": "4112053",
+   "group": "legal",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "محترف السلامة والصحة المهنية",
+   "code": "",
+   "group": "ohs",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "ممارس السلامة والصحة المهنية",
+   "code": "",
+   "group": "ohs",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب / مخلص جمركي / مساعد مخلص",
+   "code": "4211103",
+   "group": "customs",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مبند جمركي / أخصائي تبنيد وتصنيف",
+   "code": "5123033",
+   "group": "customs",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "وسيط تخليص جمركي",
+   "code": "5123013",
+   "group": "customs",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مترجم",
+   "code": "2511041",
+   "group": "customs",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير عام",
+   "code": "1111031",
+   "group": "customs",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مسؤول علاقات حكومية / مندوب",
+   "code": "6223025",
+   "group": "customs",
+   "effective_date": null,
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مهندس إدارة مشاريع",
+   "code": "214909",
+   "group": "project_management",
+   "effective_date": "2027-02-14",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مترجم",
+   "code": "264301",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مترجم فوري",
+   "code": "264302",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي لغوي",
+   "code": "264305",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "سكرتير",
+   "code": "412002",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "سكرتير تنفيذي",
+   "code": "334301",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدخل بيانات",
+   "code": "413201",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أمين مخزن",
+   "code": "432101",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب استلام مخازن",
+   "code": "413101",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أمين صندوق",
+   "code": "241104",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب موارد بشرية",
+   "code": "441601",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "ناسخ",
+   "code": "441401",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب شكاوى",
+   "code": "422502",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب استقبال مرضى",
+   "code": "422602",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "موظف استقبال فندق",
+   "code": "422401",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مخلص جمركي",
+   "code": "333103",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير شؤون عمال",
+   "code": "121211",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير علاقات الأفراد",
+   "code": "121208",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "حارس أمن",
+   "code": "541402",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": [
+    "سائق أمن"
+   ]
+  },
+  {
+   "title": "حارس شخصي",
+   "code": "541403",
+   "group": "admin_support",
+   "effective_date": "2026-04-05",
+   "subgroup": null,
+   "aliases": [
+    "سائق شخصي"
+   ]
+  },
+  {
+   "title": "مترجم لغة إشارة",
+   "code": "264304",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مصحح لغوي",
+   "code": "264303",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مراقب كاميرات أمنية",
+   "code": "541401",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب حركة مخزون",
+   "code": "432103",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب شحن",
+   "code": "432102",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "موظف استقبال",
+   "code": "422601",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب استعلامات",
+   "code": "422501",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "طابع",
+   "code": "413102",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مساعد إداري",
+   "code": "412001",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب سجل",
+   "code": "411002",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب علاقات حكومية",
+   "code": "411001",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "وكيل جمركي",
+   "code": "333102",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "وكيل شحن",
+   "code": "333101",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "خبير علاقات عامة",
+   "code": "243209",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مستشار علاقات عامة",
+   "code": "243208",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي مراسم",
+   "code": "243207",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي تنظيم مؤتمرات وفعاليات",
+   "code": "243206",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي توعية جمهور",
+   "code": "243205",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي تواصل داخلي",
+   "code": "243204",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي علاقات عامة",
+   "code": "243202",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير علاقات عامة",
+   "code": "122203",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مراسم",
+   "code": "122206",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير جمع التبرعات",
+   "code": "122205",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "خبير موارد بشرية",
+   "code": "242313",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مستشار موارد بشرية",
+   "code": "242312",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي استقطاب",
+   "code": "242311",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي مراقبة موارد بشرية",
+   "code": "242310",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي تخطيط القوى العاملة",
+   "code": "242309",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "واضع خطة عمالية",
+   "code": "242308",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "محقق عمالي",
+   "code": "242307",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي توجيه مهني",
+   "code": "242306",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي تعويضات",
+   "code": "242305",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي توظيف",
+   "code": "242304",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي تصنيف وظيفي ومهني",
+   "code": "242303",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي عمليات موارد بشرية",
+   "code": "242302",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي ارتباط وظيفي",
+   "code": "242301",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير موارد بشرية أمن سيبراني",
+   "code": "121216",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير تحقيق إداري",
+   "code": "121215",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير تنظيم إداري",
+   "code": "121214",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير تطوير مؤسسي",
+   "code": "121213",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مكتب خدمة مدنية",
+   "code": "121212",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مكتب عمل",
+   "code": "121210",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مكتب استقطاب",
+   "code": "121209",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير تطوير موارد بشرية",
+   "code": "121207",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير مواهب",
+   "code": "121206",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير تعويضات",
+   "code": "121205",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير توظيف",
+   "code": "121204",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير تصنيف مهني",
+   "code": "121203",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير تخطيط القوى العاملة",
+   "code": "121202",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مدير عمليات موارد بشرية",
+   "code": "121201",
+   "group": "admin_support",
+   "effective_date": "2026-10-04",
+   "subgroup": null,
+   "aliases": [
+    "مدير موارد بشرية"
+   ]
+  },
+  {
+   "title": "كاتب مركز اتصالات",
+   "code": "422201",
+   "group": "customer_service",
+   "effective_date": "2022-12-17",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب استعلامات مركز خدمة عملاء",
+   "code": "422202",
+   "group": "customer_service",
+   "effective_date": "2022-12-17",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "مشغل مقسم هاتف",
+   "code": "422302",
+   "group": "customer_service",
+   "effective_date": "2022-12-17",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب اتصال",
+   "code": "422303",
+   "group": "customer_service",
+   "effective_date": "2022-12-17",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب بيانات عملاء",
+   "code": "422902",
+   "group": "customer_service",
+   "effective_date": "2022-12-17",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب تذاكر سفر",
+   "code": "422103",
+   "group": "customer_service",
+   "effective_date": "2022-12-17",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "كاتب استعلامات سياحية",
+   "code": "422102",
+   "group": "customer_service",
+   "effective_date": "2022-12-17",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "موظف خدمة عملاء",
+   "code": "",
+   "group": "customer_service",
+   "effective_date": "2022-12-17",
+   "subgroup": null,
+   "aliases": []
+  },
+  {
+   "title": "أخصائي خدمة عملاء",
+   "code": "",
+   "group": "customer_service",
+   "effective_date": "2022-12-17",
+   "subgroup": null,
+   "aliases": []
+  }
+ ]
+}

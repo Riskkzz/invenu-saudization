@@ -1,0 +1,24 @@
+# سيرفر الشركة الداخلي:  docker compose up -d   ثم افتح http://<اسم-السيرفر>:8765 من داخل شبكة الشركة
+services:
+  invenu-saudization:
+    build: .
+    image: invenu-saudization:5.2.0
+    container_name: invenu-saudization
+    restart: unless-stopped
+    ports:
+      # يستمع على localhost فقط؛ يصل إليه المستخدمون عبر الوكيل العكسي (Reverse proxy) للشركة مع SSO.
+      # للوصول المباشر من الشبكة الداخلية استبدلها بـ "8765:8765".
+      - "127.0.0.1:8765:8765"
+    environment:
+      # 1 = القواعد للقراءة فقط من الواجهة؛ عدّل /data/rules/saudization_rules.json من حساب مسؤول.
+      INVENU_RULES_READONLY: "1"
+    volumes:
+      - invenu-data:/data
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  invenu-data:

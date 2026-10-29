@@ -1,0 +1,27 @@
+# يبني نسخاً تنفيذية لويندوز وماك عند إنشاء وسم (tag) مثل v5.2.0
+name: build-desktop
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-dev.txt
+      - run: python -m pytest -q tests
+      - run: pyinstaller packaging/invenu_saudization.spec --noconfirm
+      - name: Add user README
+        shell: bash
+        run: cp README.md dist/INVENU-Saudization/README.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: INVENU-Saudization-${{ matrix.os }}
+          path: dist/INVENU-Saudization

@@ -1,0 +1,13 @@
+.venv
+.git
+.github
+**/__pycache__
+**/.pytest_cache
+tests
+packaging
+dist
+build
+rules/backups
+*.zip
+.cache
+web

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.cache/
+dist/
+build/
+rules/backups/
+*.zip
+.DS_Store
