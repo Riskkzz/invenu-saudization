@@ -14,9 +14,19 @@ const store = {get: k => { try { return localStorage.getItem(k); } catch (e) { r
 const sess = {get: k => { try { return sessionStorage.getItem(k); } catch (e) { return null; } },
               set: (k, v) => { try { sessionStorage.setItem(k, v); } catch (e) { /* storage unavailable */ } },
               del: k => { try { sessionStorage.removeItem(k); } catch (e) { /* storage unavailable */ } }};
+
+// داخل منصة INVENU HireFlow: الأداة في إطار (iframe) عنوانه ?embed=1&lang=ar|en&theme=light|dark — ولا أثر له خارج الإطار.
+// ترويسة المنصة تحمل الشعار والموقع واللغة، فتُخفى هنا (styles.css: data-embed)، واللغة والمظهر يتبعان المنصة
+// دون حفظ: المنصة صاحبة الاختيار، وتغيّرهما برسالة منها دون إعادة تحميل، فلا يضيع تحليل معروض.
+const oneOf = (v, ok) => ok.includes(v) ? v : null;
+const EMBED = (() => {
+  const q = new URLSearchParams(location.search);
+  if (window.self === window.top || q.get("embed") !== "1") return null;
+  return {lang: oneOf(q.get("lang"), ["ar", "en"]), theme: oneOf(q.get("theme"), ["light", "dark"])};
+})();
 const S = {
   aiKey: sess.get("inv-ai-key") || "", aiProv: sess.get("inv-ai-provider") || "", aiModel: sess.get("inv-ai-model") || "", aiDefaults: {anthropic: "claude-opus-5-5", openai: "gpt-4.1"}, ai: {text: "", draft: null, warnings: [], busy: false, err: ""},
-  lang: store.get("inv-lang") === "en" ? "en" : "ar",
+  lang: EMBED?.lang || (store.get("inv-lang") === "en" ? "en" : "ar"),
   token: null, data: null, rules: null, tab: "comp", open: new Set(),
   settings: {reference_date: new Date().toISOString().slice(0, 10), wage_tier: "bachelor", below_min_weight: null,
              include_activity_specific: false, category: null, repeat_multiplier: null},
@@ -68,6 +78,20 @@ function currentTheme() { const d = document.documentElement.dataset.theme; retu
 function applyThemeLabel() { $("themeBtn").textContent = currentTheme() === "dark" ? t("theme_light") : t("theme_dark"); }
 $("langBtn").onclick = () => { S.lang = S.lang === "ar" ? "en" : "ar"; store.set("inv-lang", S.lang); applyLang(); render(); };
 $("themeBtn").onclick = () => { const n = currentTheme() === "dark" ? "light" : "dark"; document.documentElement.dataset.theme = n; store.set("inv-theme", n); applyThemeLabel(); };
+
+/* ------------------------------------------------------------------ embed (INVENU HireFlow) */
+if (EMBED) {
+  const root = document.documentElement;
+  root.dataset.embed = "";
+  root.dataset.theme = EMBED.theme || "light";            // لوحة المنصة فاتحة؛ يتجاوز ما حفظته الأداة المستقلة
+  // من الصفحة الحاضنة وحدها، ومن الموقع نفسه: لا يغيّر أي موقع آخر لغة الأداة أو مظهرها
+  window.addEventListener("message", e => {
+    if (e.source !== window.parent || e.origin !== location.origin || e.data?.type !== "invenu:embed") return;
+    const lang = oneOf(e.data.lang, ["ar", "en"]), theme = oneOf(e.data.theme, ["light", "dark"]);
+    if (theme) { root.dataset.theme = theme; applyThemeLabel(); }
+    if (lang && lang !== S.lang) { S.lang = lang; applyLang(); render(); }
+  });
+}
 
 /* ------------------------------------------------------------------ render */
 function render() {

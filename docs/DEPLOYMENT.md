@@ -52,6 +52,12 @@ python -m http.server -d dist/web 8000        # تجربة محلية: http://12
   فعّله مرة واحدة: **Settings ← Pages ← Source: GitHub Actions**. الرابط: `https://<المالك>.github.io/<المستودع>/`.
 - **أو على موقع INVENU:** ارفع محتوى `dist/web/` كما هو إلى أي استضافة ملفات ثابتة.
 - **رابط المستودع** الظاهر في الصفحة: الثابت `REPO_URL` في أول `frontend/js/app.js`.
+- **داخل منصة INVENU HireFlow:** نسخة من `dist/web/` في مستودع HireFlow تحت `frontend/public/tools/saudization/`،
+  تفتحها صفحة «محلل التوطين» في إطار (iframe) بعنوان `index.html?embed=1&lang=ar|en&theme=light|dark`.
+  في هذا الوضع (`EMBED` في `app.js`، و`data-embed` في `styles.css`) تُخفى الشعار والموقع وزرّا اللغة والمظهر لأن ترويسة المنصة تحملها،
+  وتتبع اللغة والمظهر المنصة دون حفظ، وتتغيّر برسالة `{type: "invenu:embed", lang, theme}` من الصفحة الحاضنة على الموقع نفسه فقط.
+  لا يتغيّر السكربت المضمَّن في `<head>`، فتبقى بصمة CSP كما هي. بعد بناء نسخة جديدة يحدّثها في HireFlow:
+  `frontend/scripts/update-saudization-tool.sh <مسار dist/web>` (التفاصيل في `docs/saudization-analyzer.md` هناك).
 
 كيف تعمل:
 | الملف | الدور |

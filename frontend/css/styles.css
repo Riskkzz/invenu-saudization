@@ -46,6 +46,9 @@ h1,h2,h3{text-wrap:balance;margin:0}
 .meta .wm svg{height:100%;width:auto;display:block}
 .meta .actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .meta .loc{justify-self:end;text-align:end}
+/* داخل منصة INVENU (app.js: EMBED): ترويسة المنصة تحمل الشعار والموقع واللغة والمظهر، فيبقى زر الإعدادات وحده في طرف السطر */
+:root[data-embed] .meta .wm,:root[data-embed] .meta .loc,:root[data-embed] #langBtn,:root[data-embed] #themeBtn{display:none}
+:root[data-embed] .meta{display:flex;justify-content:flex-end;padding-block:16px 0}
 .toggle{border:1px solid var(--line-strong);background:var(--surface);border-radius:999px;padding:5px 12px;cursor:pointer;font-size:12.5px;display:inline-flex;gap:6px;align-items:center}
 .toggle:hover{border-color:var(--mauve);color:var(--mauve-ink)}
 
